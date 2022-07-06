@@ -3,18 +3,16 @@ export default {
   //Change The Website Template
 
   //   Header Details ---------------------
-  name: "chetan",
+  name: "Jacob Chan",
   headerTaglineOne: "Hello 👋",
-  headerTaglineTwo: "I'm Chetan Verma - curious",
-  headerTaglineThree: "designer and devloper",
-  headerTaglineFour: " based in New Delhi, India.",
+  headerTaglineTwo: "I am Jacob.",
+  headerTaglineThree: "I am a Software Developer.",
+  headerTaglineFour: " Nice to meet you!",
 
   socials: [
-    { title: "Github", link: "https://github.com/chetanverma16" },
-    { title: "LinkedIn", link: "https://www.linkedin.com/in/chetanverma7/" },
-    { title: "Twitter", link: "https://twitter.com/realchetanverma" },
-    { title: "Blog", link: "https://blog.chetanverma.com/" },
-    { title: "Email", link: "mailto:hello@chetanverma.com" },
+    { title: "Github", link: "https://github.com/jcbchndev" },
+    { title: "LinkedIn", link: "https://www.linkedin.com/in/jacob-chan-010929180/" },
+    { title: "Email : jcbchndev@proton.me", link : "mailto:jcbchndev@proton.me"},
   ],
 
   // End Header Details -----------------------
@@ -118,7 +116,8 @@ export default {
 
   // About Secton --------------
   aboutpara:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "I am currently a software engineer with around 1 year of experience in full stack web development. I am familiar with the following technology stacks:"
+    
   //   End About Section ---------------------
 };
 

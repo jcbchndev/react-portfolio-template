@@ -7,9 +7,25 @@ import { useIsomorphicLayoutEffect } from "../utils";
 import { stagger } from "../animations";
 import Footer from "../components/Footer";
 import Head from "next/head";
+import Image from 'next/image'
+import {
+  React,
+  NextJS,
+  Angular,
+  Express,
+  MongoDB,
+  NodeJS,
+  MySQL,
+  Java,
+  JSicon,
+  htmlicon,
+  cssicon,
+  Pythn
+} from "../_logos/";
 
 // Local Data
 import data from "../yourData";
+import { reactStrictMode } from "../next.config";
 
 export default function Home() {
   // Ref
@@ -59,63 +75,84 @@ export default function Home() {
           <div className="mt-5">
             <h1
               ref={textOne}
-              className="text-8xl mob:text-3xl laptop:text-8xl mob:p-2 text-bold w-4/5 mob:w-full laptop:w-4/5">
+              className="text-8xl mob:text-3xl laptop:text-6xl mob:p-2 text-bold w-4/5 mob:w-full laptop:w-4/5">
               {data.headerTaglineOne}
             </h1>
             <h1
               ref={textTwo}
-              className="text-8xl mob:text-3xl laptop:text-8xl mob:p-2 text-bold w-4/5 mob:w-full laptop:w-4/5">
+              className="text-8xl mob:text-3xl laptop:text-6xl mob:p-2 text-bold w-4/5 mob:w-full laptop:w-4/5">
               {data.headerTaglineTwo}
             </h1>
             <h1
               ref={textThree}
-              className="text-8xl mob:text-3xl laptop:text-8xl mob:p-2 text-bold w-4/5 mob:w-full laptop:w-4/5">
+              className="text-8xl mob:text-3xl laptop:text-6xl mob:p-2 text-bold w-4/5 mob:w-full laptop:w-4/5">
               {data.headerTaglineThree}
             </h1>
             <h1
               ref={textFour}
-              className="text-8xl mob:text-3xl laptop:text-8xl mob:p-2 text-bold w-4/5 mob:w-full laptop:w-4/5">
+              className="text-8xl mob:text-3xl laptop:text-6xl mob:p-2 text-bold w-4/5 mob:w-full laptop:w-4/5">
               {data.headerTaglineFour}
             </h1>
           </div>
 
           <Socials className="mt-5 mob:mt-2 laptop:mt-5" />
         </div>
+
         <div
-          className="mt-40 mob:mt-10 laptop:mt-40 mob:p-2 laptop:p-0"
-          ref={workRef}>
-          <h1 className="text-2xl text-bold">Work.</h1>
-          <div className="mt-10 mob:mt-5 laptop:mt-10 grid grid-cols-2 mob:grid-cols-1 laptop:grid-cols-2 gap-4">
-            {data.projects.map((project, index) => (
-              <WorkCard
-                key={index}
-                img={project.imageSrc}
-                name={project.title}
-                description={project.description}
-                onClick={() => window.open(project.url)}
-              />
-            ))}
+          className="mt-40 mob:mt-2 laptop:mt-7 mob:p-2 laptop:p-0"
+          ref={aboutRef}
+        >
+          <h1 className="text-4xl text-bold">About Me 💻:</h1>
+          <div className="m-5 mob:m-0 laptop:m-5 mob:mt-2 laptop:ml-0 ml-0 text-3xl mob:text-xl laptop:text-2xl w-3/5 mob:w-full laptop:w-3/5 ">
+            🎓 I recently completed my BSc. in Comp Sci. at the University of Connecticut.
+            <div className="mt-40 mob:mt-2 laptop:mt-5 mob:p-2 laptop:p-0"> 🧍🏻‍♂️ I am currently a software engineer with around 1 year of industry experience in full stack web development.</div>
+            <div className="mt-40 mob:mt-2 laptop:mt-5 mob:p-2 laptop:p-0"> 👨‍💻 Some of the technologies I use frequently: </div>
+            <div className="mt-40 mob:mt-2 laptop:mt-7 mob:p-2 laptop:p-0">
+              <div>
+                <div style={{ display: "inline-block", paddingRight: "20px" }}>
+                  <Image src={JSicon} width={100} height={100} />
+                </div>
+                <div style={{ display: "inline-block", paddingRight: "20px" }}>
+                  <Image src={htmlicon} width={100} height={100} />
+                </div>
+                <div style={{ display: "inline-block", paddingRight: "10px" }}>
+                  <Image src={cssicon} width={85} height={100} />
+                </div>
+                <div style={{ display: "inline-block", paddingRight: "5px" }}>
+                  <Image src={Java} width={100} height={100} />
+                </div>
+                <div style={{ display: "inline-block", paddingRight: "20px" }}>
+                  <Image src={Pythn} width={100} height={100} />
+                </div>
+              </div>
+              <div>
+                <div style={{ display: "inline-block", paddingRight: "20px" }}>
+                  <Image src={React} width={100} height={100} />
+                </div>
+                <div style={{ display: "inline-block", paddingRight: "20px" }}>
+                  <Image src={Angular} width={100} height={100} />
+                </div>
+                <div style={{ display: "inline-block", paddingRight: "10px" }}>
+                  <Image src={NextJS} width={150} height={100} />
+                </div>
+                <div style={{ display: "inline-block", paddingRight: "5px" }}>
+                  <Image src={Express} width={200} height={100} />
+                </div>
+                <div style={{ display: "inline-block", paddingRight: "20px" }}>
+                  <Image src={NodeJS} width={100} height={100} />
+                </div>
+              </div>
+              <div>
+                <div style={{ display: "inline-block", paddingRight: "20px" }}>
+                  <Image src={MongoDB} width={100} height={100} />
+                </div>
+                <div style={{ display: "inline-block", paddingRight: "20px" }}>
+                  <Image src={MySQL} width={150} height={100} />
+                </div>
+              </div>
+            </div>
+            <div className="mt-40 mob:mt-2 laptop:mt-5 mob:p-2 laptop:p-0">Also interested in developing for mobile, enterprise, and cloud systems as well!</div>
           </div>
-        </div>
-        <div className="mt-40 mob:mt-2 laptop:mt-40 mob:p-2 laptop:p-0">
-          <h1 className="text-2xl text-bold">Services.</h1>
-          <div className="mt-10 grid grid-cols-2 mob:grid-cols-1 laptop:grid-cols-2 gap-6">
-            {data.services.map((service, index) => (
-              <ServiceCard
-                key={index}
-                name={service.title}
-                description={service.description}
-              />
-            ))}
-          </div>
-        </div>
-        <div
-          className="mt-40 mob:mt-2 laptop:mt-40 mob:p-2 laptop:p-0"
-          ref={aboutRef}>
-          <h1 className="text-2xl text-bold">About.</h1>
-          <p className="m-5 mob:m-0 laptop:m-5 mob:mt-2 laptop:ml-0 ml-0 text-3xl mob:text-xl laptop:text-3xl w-3/5 mob:w-full laptop:w-3/5">
-            {data.aboutpara}
-          </p>
         </div>
         <Footer />
       </div>
