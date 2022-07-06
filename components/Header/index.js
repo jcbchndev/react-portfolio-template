@@ -15,13 +15,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
         className="font-medium cursor-pointer mob:p-2 laptop:p-0">
         {data.name}.
       </h1>
-      {
-        <div className="flex">
-          <Button onClick={() => window.open(myresume)}>Resume</Button> 
-          <Button onClick={() => window.open("mailto:jcbchndev@proton.me")}>
-            Contact
-          </Button>
-        </div>}
+      
     </div>
   );
 };
