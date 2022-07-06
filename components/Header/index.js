@@ -17,7 +17,6 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
       </h1>
       {
         <div className="flex">
-          <Button onClick={handleAboutScroll}>About</Button>
           <Button onClick={() => window.open(myresume)}>Resume</Button> 
           <Button onClick={() => window.open("mailto:jcbchndev@proton.me")}>
             Contact
