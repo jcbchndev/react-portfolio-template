@@ -13,7 +13,7 @@ export default {
     { title: "Github", link: "https://github.com/jcbchndev" },
     { title: "LinkedIn", link: "https://www.linkedin.com/in/jacob-chan-010929180/" },
     { title: "Email : jcbchndev@proton.me", link : "mailto:jcbchndev@proton.me"},
-    { title: "Resume", link: "https://drive.google.com/file/d/1s7g3CA6URg7x29o_b2Aj518Xc5wUGcr0/view?usp=sharing"}
+    { title: "Resume", link: "https://drive.google.com/file/d/1vSxGtljqv2tb5aKNvN_hYPj_kI15GnBj/view?usp=sharing"}
   ],
 
   aboutpara:
