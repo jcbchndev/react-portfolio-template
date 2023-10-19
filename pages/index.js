@@ -63,9 +63,6 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <title>{data.name}</title>
-      </Head>
       <div className="container mx-auto mb-10">
         <Header
           handleWorkScroll={handleWorkScroll}
@@ -104,54 +101,26 @@ export default function Home() {
         >
           <h1 className="text-4xl text-bold">About Me 💻:</h1>
           <div className="m-5 mob:m-0 laptop:m-5 mob:mt-2 laptop:ml-0 ml-0 text-3xl mob:text-xl laptop:text-2xl w-3/5 mob:w-full laptop:w-3/5 ">
-            🎓 I recently completed my BSc. in Comp Sci. at the University of Connecticut.
-            <div className="mt-40 mob:mt-2 laptop:mt-5 mob:p-2 laptop:p-0"> 🧍🏻‍♂️ I am currently a software engineer with around 1 year of industry experience in full stack web development.</div>
+            🎓 I completed my Bachelors of Computer Science from the University of Connecticut, Go Huskies!
+            <div className="mt-40 mob:mt-2 laptop:mt-5 mob:p-2 laptop:p-0"> 🧍🏻‍♂️ I am currently a software engineer with around 3 year of industry experience in full stack web development.</div>
             <div className="mt-40 mob:mt-2 laptop:mt-5 mob:p-2 laptop:p-0"> 👨‍💻 Some of the technologies I use frequently: </div>
             <div className="mt-40 mob:mt-2 laptop:mt-7 mob:p-2 laptop:p-0">
-              <div>
-                <div style={{ display: "inline-block", paddingRight: "20px" }}>
+            <div style={{ display: "inline-block", paddingRight: "20px" }}>
                   <Image src={JSicon} width={100} height={100} />
-                </div>
-                <div style={{ display: "inline-block", paddingRight: "20px" }}>
-                  <Image src={htmlicon} width={100} height={100} />
-                </div>
-                <div style={{ display: "inline-block", paddingRight: "10px" }}>
-                  <Image src={cssicon} width={85} height={100} />
-                </div>
-                <div style={{ display: "inline-block", paddingRight: "5px" }}>
-                  <Image src={Java} width={100} height={100} />
                 </div>
                 <div style={{ display: "inline-block", paddingRight: "20px" }}>
                   <Image src={Pythn} width={100} height={100} />
                 </div>
-              </div>
-              <div>
                 <div style={{ display: "inline-block", paddingRight: "20px" }}>
                   <Image src={React} width={100} height={100} />
                 </div>
                 <div style={{ display: "inline-block", paddingRight: "20px" }}>
                   <Image src={Angular} width={100} height={100} />
                 </div>
-                <div style={{ display: "inline-block", paddingRight: "10px" }}>
-                  <Image src={NextJS} width={150} height={100} />
-                </div>
-                <div style={{ display: "inline-block", paddingRight: "5px" }}>
-                  <Image src={Express} width={200} height={100} />
-                </div>
                 <div style={{ display: "inline-block", paddingRight: "20px" }}>
                   <Image src={NodeJS} width={100} height={100} />
                 </div>
-              </div>
-              <div>
-                <div style={{ display: "inline-block", paddingRight: "20px" }}>
-                  <Image src={MongoDB} width={100} height={100} />
-                </div>
-                <div style={{ display: "inline-block", paddingRight: "20px" }}>
-                  <Image src={MySQL} width={150} height={100} />
-                </div>
-              </div>
             </div>
-            <div className="mt-40 mob:mt-2 laptop:mt-5 mob:p-2 laptop:p-0">Also interested in developing for mobile, enterprise, and cloud systems as well!</div>
           </div>
         </div>
         <Footer />
